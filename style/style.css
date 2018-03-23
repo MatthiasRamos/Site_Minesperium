@@ -1,0 +1,280 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #f1f0cc;
+	margin: 0px;
+}
+
+.texte{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+	max-width: 700px;
+}
+
+.photo_generale{
+	max-width: 600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo{
+	display: block;
+	height: auto;
+	width: auto;
+	max-height: 200px;
+	margin: auto;
+} 
+.nom_liste{
+	display: block;
+	height: auto;
+	width: auto;
+	max-height: 50px;
+	margin: auto;
+}
+
+.logo-container{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: gray;
+	background-image: url(../img/parchemin.jpeg);
+}
+
+.menucontainer{
+	display: block;
+	text-align: center;
+	background-color: #6E0B14;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.menucontainer a{
+	width: 25%;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	color: #FFBF00;
+	list-style: none;
+	text-decoration: none;
+	font-size: 17px;
+	padding: 14px 16px;
+}
+
+.menucontainer .icon{
+	display: none;
+}
+
+.menucontainer a:hover{
+	display: block;
+	background-color: #FFBF00;
+	color: black;
+}
+
+.formulaire{
+	padding: 10px;
+	background-color: #FFBF00;
+	width: 500px;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.texte{
+	padding: 10px;
+}
+
+
+a{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table{
+	margin-top: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td{
+	padding: 10px;
+}
+
+.jeu{
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	height: 60px;
+	width: 80px;
+}
+
+.jeu img{
+	max-height: 30px;
+	height: auto;
+	width: auto;
+}
+
+.social{
+	display: inline-block;
+	padding: 10px;
+	max-height: 50px;
+	height: auto;
+	width: auto;
+}
+
+.social-container{
+	text-align: center;
+}
+
+.credits{
+	text-align: center;	
+}
+
+.game-container{
+	padding-top: 0px;
+	float: left;
+	display: inline-block;
+	margin-right: -90px;
+}
+
+.connection-container{
+	margin-top: -170px;
+	margin-left: auto;
+	margin-right: 0px;
+	float: right;
+	width:170px;
+	padding: 10px;
+	/*background-color: red;*/
+	text-align: center;
+}
+
+.connection input{
+	max-width: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.rouge{
+	color:red;
+}
+
+.hello{
+	font-size: 18px;
+}
+
+.event{
+	display: block;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Gestion de l'affichage sur petit écran.*/
+
+@media screen and (max-width:600px) {
+	body{
+		width: 100%;
+	}
+	.logo{
+		display: block;
+		height: auto;
+		width: auto;
+		max-height: 100px;
+		margin: auto;
+	} 
+
+	.logo-container{
+		display: block;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: gray;
+		background-image: url(../img/parchemin.jpeg);
+		height: 200px;
+	}
+
+	.menucontainer a{display: none;}
+
+	.menucontainer a.icon{
+		float: right;
+		display: block;
+	}
+	.photo_generale{
+		max-width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.connection-container{
+		margin:0;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width:100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.connection input{
+		max-width: 150px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		text-align: center;
+	}
+
+	.rouge{
+		color:red;
+	}
+	table{
+		max-width: 480px;
+		font-size: 11px;
+	}
+	.social-container{
+		width: 100%;
+	}
+
+	.social{
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.menucontainer.responsive {
+		position: relative;
+	}
+	.menucontainer.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.menucontainer.responsive a{
+		float: none;
+		display: block;
+		text-align:left;
+	}
+}
