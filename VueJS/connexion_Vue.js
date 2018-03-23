@@ -74,6 +74,10 @@ var infoConnect = new Vue({
 
 	mounted : function(){
 
+		axios.get("https://minesperium.herokuapp.com/api/users/check/" + login).then(function(reponse){
+
+			infoConnect.pseudo = reponse.data.pseudo; 
+		});
 
 		axios.get("https://minesperium.herokuapp.com/api/users/ranking").then(function(reponse){
 
@@ -93,7 +97,3 @@ var infoConnect = new Vue({
 		})
 	}
 });
-axios.get("https://minesperium.herokuapp.com/api/users/check/" + login).then(function(reponse){
-
-			infoConnect.pseudo = reponse.data.pseudo; 
-		})

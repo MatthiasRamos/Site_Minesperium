@@ -67,6 +67,7 @@
 	<a href="allos.php">Allo ?</a>
 	<a href="planning.php">Planning</a>
 	<a href="jeux_classements.php">Jeux et classements</a>
+	
 	<?php if (isset($_SESSION['login']) && (($_SESSION['login'] == "Sim's") || ($_SESSION['login'] == "Ramos"))){
 
 			echo "<a href='ajout_point.php'>Ajout Points</a>";
